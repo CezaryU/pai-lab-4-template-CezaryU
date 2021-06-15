@@ -20,8 +20,7 @@ class Registration{
         $this->fields['nazwisko'] = new FormInput('nazwisko', 'Nazwisko'); 
         $this->fields['ulica'] = new FormInput('ulica', 'Ulica'); 
         $this->fields['nr_domu'] = new FormInput('nr_domu', 'Numer domu'); 
-        $this->fields['nr_mieszkania'] = 
-            new FormInput('nr_mieszkania', 'Numer mieszkania', '', 'text', false); 
+        $this->fields['nr_mieszkania'] = new FormInput('nr_mieszkania', 'Numer mieszkania', '', 'text', false); 
         $this->fields['miejscowosc'] = new FormInput('miejscowosc', 'Miejscowość'); 
         $this->fields['kod'] = new FormInput('kod', 'Kod pocztowy'); 
         $this->fields['kraj'] = new FormInput('kraj', 'Kraj');
