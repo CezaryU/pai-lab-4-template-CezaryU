@@ -26,15 +26,17 @@ class PortalFront extends Portal
 
   function login()
   // Sprawdzenie czy ustanowiono połączenie z DB 
-  if (!$this->dbo) 
+  if (!$this->dbo) {
     return SERVER_ERROR; 
+  }
   // Sprawdzenie, czy użytkownik już jest zalogowany 
-  if ($this->zalogowany) 
+  if ($this->zalogowany) {
     return NO_LOGIN_REQUIRED; 
+  }
   // Sprawdzenie, czy zostały przekazane parametry, a jeżeli tak to ich odczytanie 
-  if (!isset($_POST["email"]) || !isset($_POST["haslo"])) 
+  if (!isset($_POST["email"]) || !isset($_POST["haslo"])) {
     return FORM_DATA_MISSING; 
-  
+  }
   $user = $_POST["email"]; 
   $pass = $_POST["haslo"]; 
   // Sprawdzenie długości przekazanych ciągów dla kodowania utf-8 
