@@ -24,7 +24,7 @@ class PortalFront extends Portal
     //Treść meotdy getMessage
   }
 
-  function login()
+  function login() {
   // Sprawdzenie czy ustanowiono połączenie z DB 
   if (!$this->dbo) {
     return SERVER_ERROR; 
@@ -69,7 +69,7 @@ class PortalFront extends Portal
       return ACTION_OK; 
     } 
   } 
-
+}
   
   function logout()
   {
